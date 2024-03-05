@@ -1,0 +1,51 @@
+// Create the following directory structure. (Create empty files where necessary)
+// hello
+// ├── five
+// │   └── six
+// │       ├── c.txt
+// │       └── seven
+// │           └── error.log
+// └── one
+//     ├── a.txt
+//     ├── b.txt
+//     └── two
+//         ├── d.txt
+//         └── three
+//             ├── e.txt
+//             └── four
+//                 └── access.log
+// Delete all the files having the .log extension
+// Add the following content to a.txt
+// Delete the directory named five
+// Rename the one directory to uno
+// Move a.txt to the two directory
+
+// mkdir -p hello/subrrot1/subroot2
+// touch hello/file1.txt
+// touch hello/subroot1/files.txt
+// touch hello/subroot1/subroot2/file3.txt
+
+//mkdir-p hello/{five/six/seven,one/two/three/four}
+//touch hello/one/{a.txt,b.txt}
+//touch hello/one/two/{d.txt}
+//touch hello/one/two/three/{e.txt}
+//touch hello/five/six/{c.txt}
+//touch hello/five/six/seven/{error.log}
+//touch hello/one/two/three/four/{access.log}
+
+//Delete all the files having the .log extension
+//find hello -type f _name "*.log" -delete
+
+// Add the following content to a.txt
+//echo "thi is the content of a.text" > hello/one/a.txt
+
+//Delete the directory named five
+//rm -r hello/five
+
+// Rename the one directory to uno
+//mv hello/one hello/uno
+
+// Move a.txt to the two directory
+//mv hello/uno/a.txt hello/uno/two/
+
+// using the ls -R commond to this will recursively list all files and directory and its subdirectories
